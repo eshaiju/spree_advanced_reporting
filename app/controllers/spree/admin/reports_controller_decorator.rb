@@ -11,7 +11,7 @@ Spree::Admin::ReportsController.class_eval do
 
   ADVANCED_REPORTS ||= {}
   [ :revenue, :units, :profit, :count, :top_products, :top_customers].each do |x|
-    ADVANCED_REPORTS[x]= {name: "adv_report."+x.to_s, :description => "adv_report."+x.to_s}
+    ADVANCED_REPORTS[x]= {name: x.to_s, :description => x.to_s}
   end
 
 
