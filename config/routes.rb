@@ -1,4 +1,4 @@
- Spree::Core::Engine.routes.prepend do
+ Spree::Core::Engine.routes.draw do
   #namespace :admin do
   #  resources :reports, :only => [:index, :show] do
   #    collection do
